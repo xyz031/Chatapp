@@ -7,7 +7,7 @@
     "install-backend": "npm install --legacy-peer-deps --prefix backend",
     "install-frontend": "npm install --legacy-peer-deps --prefix frontend",
     "build-frontend": "npm run build --prefix frontend",
-    "build": "npm run install-backend && npm run install-frontend && npm run build-frontend",
+    "build": " npm run install-frontend && npm run install-backend  && npm run build-frontend",
   
     "start": "npm run start --prefix backend",
     "lint": "eslint ."
