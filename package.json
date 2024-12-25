@@ -1,23 +1,31 @@
 {
-  "name": "chat-app",
+  "name": "chat",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js", 
-   "scripts": {
-    "install-backend": "npm install --legacy-peer-deps --prefix backend",
-    "install-frontend": "npm install --legacy-peer-deps --prefix frontend",
-    "build-frontend": "npm run build --prefix frontend",
-    "build": " npm run install-frontend && npm run install-backend  && npm run build-frontend",
-  
-    "start": "npm run start --prefix backend",
-    "lint": "eslint ."
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix Backend && npm install --prefix frontend && npm run build --prefix frontend ",
+    "start": "npm run start --prefix Backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyz031/Chatapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/xyz031/Chatapp/issues"
+  },
+  "homepage": "https://github.com/xyz031/Chatapp#readme",
+  "description": "",
   "dependencies": {
-    "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.37.3",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "@aws-sdk/credential-providers": "^3.716.0",
+    "@mongodb-js/zstd": "^2.0.0",
+    "gcp-metadata": "^5.3.0",
+    "kerberos": "^2.2.1",
+    "mongodb-client-encryption": "^6.1.1",
+    "snappy": "^7.2.2",
+    "socks": "^2.8.3"
   }
 }
