@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix Backend && npm install --prefix frontend && npm run build --prefix frontend ",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm install --production && npm run build",
+    "build:backend": "cd Backend && npm install --production",
     "start": "npm run start --prefix Backend"
   },
   "repository": {
